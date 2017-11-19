@@ -31,7 +31,7 @@ export class Game {
     public run(stage: PIXI.Container) {
         this._persons.forEach(person => this.personStep(person));
 
-        this._world.drawWorld(stage);
+        this._world.drawWorld(stage, !this._persons.length);
     }
 
     private personStep(person: Person) {
