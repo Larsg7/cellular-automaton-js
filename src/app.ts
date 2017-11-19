@@ -1,11 +1,12 @@
-import { CONFIG } from './config';
-import { Game } from './game';
+import {CONFIG} from './config';
+import {Game} from './game';
 
 const renderer = new PIXI.CanvasRenderer(512, 512);
 renderer.view.style.position = "fixed";
 renderer.view.style.display = "block";
 renderer.view.style.left = "0";
 renderer.view.style.top = "0";
+renderer.view.style.filter = "blur(5px)";
 renderer.autoResize = true;
 renderer.clearBeforeRender = false;
 renderer.resize(window.innerWidth, window.innerHeight);
@@ -19,10 +20,10 @@ renderer.render(worldStage);
 
 
 const run = () => {
-  setTimeout(run, CONFIG.TIME_STEP);
-  const stage = new PIXI.Container();
-  game.run(stage);
-  renderer.render(stage);
+    setTimeout(run, CONFIG.TIME_STEP);
+    const stage = new PIXI.Container();
+    game.run(stage);
+    renderer.render(stage);
 };
 requestAnimationFrame(run);
 
