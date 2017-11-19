@@ -1,0 +1,24 @@
+{
+  "name": "cellularautomatonjs",
+  "version": "0.1.0",
+  "description": "Cellular Automaton for your Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lars Gröber",
+  "license": "MIT",
+  "dependencies": {
+    "@types/pixi.js": "^4.6.0",
+    "typescript": "^2.6.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "browserify": "^14.5.0",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^3.2.3",
+    "gulp-webserver": "^0.9.1",
+    "tsify": "^3.0.3",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
