@@ -9,9 +9,7 @@
   "author": "Lars Gröber",
   "license": "MIT",
   "dependencies": {
-    "@types/noisejs": "0.0.28",
     "@types/pixi.js": "^4.6.0",
-    "noisejs": "^2.1.0",
     "typescript": "^2.6.1"
   },
   "devDependencies": {
